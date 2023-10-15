@@ -24,6 +24,7 @@ public class Point2D {
 		{
 			return true;
 		}
+		
 		else
 			return false;
 	}
