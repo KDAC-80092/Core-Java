@@ -20,21 +20,45 @@ public class Program01 {
 	public static void main(String[] args) {
 
 		Double[] arr = { 2.2, 5.5, 7.7, 1.1, 3.3 };
-		System.out.println("Before Sort:");
-		for(double ele : arr)
+		class SortComparator implements Comparator<Double>
 		{
-			System.out.println(ele);
+
+			@Override
+			public int compare(Double d1, Double d2) {
+				int diff = Double.compare(d1,d2);
+				return diff;
+			}
+			
+			
 		}
 		
 		
-		Arrays.sort(arr);
 		
+		
+		
+		
+//		System.out.println("Before Sort:");
+//		for(double ele : arr)
+//		{
+//			System.out.println(ele);
+//		}
+//		
+//		
+		Arrays.sort(arr,new SortComparator());
+//		
 		System.out.println("After Sort:");
-		for(double ele : arr)
-		{
-			System.out.println(ele);
-		}
+//		for(double ele : arr)
+//		{
+//			System.out.println(ele);
+//		}
+
+//		for (int i = 0; i < arr.length; i++) {
+//			System.out.println(arr[i]);
+//		}
 		
+		for (Double double1 : arr) {
+			System.out.println(double1);
+		}
 		
 	}
 
