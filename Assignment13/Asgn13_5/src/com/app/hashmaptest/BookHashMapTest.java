@@ -64,6 +64,9 @@ public class BookHashMapTest {
 				break;
 
 			default:
+				
+				System.out.println("Wrong! Choice..........");
+				
 				break;
 			}
 			
