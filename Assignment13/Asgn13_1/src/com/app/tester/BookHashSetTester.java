@@ -16,6 +16,7 @@ public class BookHashSetTester {
 		b1.add(new Book("1290",800,"Agrawal",200));	//Before Writing hashcode duplicate values are refleting
 				/*
 				 //Before Writing hashCode(). O/P.
+				  //Output is in order of Random(As per hashCode).
 				Book [isbn = 1290, price = 800.0, authorName = Agrawal, qty = 200]
 				Book [isbn = 1290, price = 800.0, authorName = Agrawal, qty = 200]
 				Book [isbn = 1251, price = 200.0, authorName = Rowling, qty = 20]
@@ -28,6 +29,7 @@ public class BookHashSetTester {
 		
 				/*
 				 //After Writing HashCode(). O/P.
+				 //Output is in order of Random(As per hashCode).
 					Book [isbn = 1290, price = 800.0, authorName = Agrawal, qty = 200]
 					Book [isbn = 1255, price = 600.0, authorName = Sunbeam, qty = 100]
 					Book [isbn = aert, price = 200.0, authorName = Rowling, qty = 20]
