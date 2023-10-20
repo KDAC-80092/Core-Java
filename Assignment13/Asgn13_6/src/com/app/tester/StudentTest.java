@@ -11,7 +11,7 @@ public class StudentTest {
 	public static void main(String[] args) {
 		
 		Map<Integer,Student> map = new LinkedHashMap<>();
-		Student s = new Student();
+		Student s;
 		
 		int choice;
 		
@@ -26,14 +26,11 @@ public class StudentTest {
 			Scanner sc = new Scanner(System.in);
 			choice = sc.nextInt();
 			
-			if(choice == 0)
-				break;
-			
 			System.out.println("********************************");
 			
 			switch (choice) {
 			case 1: // Add Student
-				
+				s = new Student();
 				s.accept();
 				map.put(s.getRoll(), s);
 				
@@ -64,6 +61,9 @@ public class StudentTest {
 				break;
 				
 			default: // Default
+				
+				if(choice == 0)
+					break;
 				
 				System.out.println("Wrong! Choice....................");
 				break;
